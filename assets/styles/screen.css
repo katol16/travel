@@ -253,6 +253,13 @@ main {
 	line-height: 23px;
 }
 
+.postBox__btn {
+	font-family: "Roboto-bold";	
+	font-size: 12px;
+	background-color: #fff;
+	border: none;
+}
+
 .postBox--small {
 	width: 670px;
 	height: 100%;
