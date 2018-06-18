@@ -1,0 +1,427 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Roboto-light";
+	src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: "Roboto-bold";
+	src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Bahiana";
+	src: url("../fonts/Bahiana-Regular.ttf");
+}
+
+body {
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+    background-attachment: fixed;
+	background-color: #f7f8f8;
+	font-family: "Roboto";
+}
+
+a, a:hover {
+	color: inherit; /* blue colors for links too */
+	text-decoration: inherit; /* no underline */
+	cursor: pointer;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 140px;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.navbar-collapse, .container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.menu--post {
+    margin-bottom: 0px;
+}
+
+.menuCollapse {
+	text-align: center;
+}
+
+.menuCollapse--left {
+	float: left;
+}
+
+.menuCollapse__list {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.menuCollapse__listLink {
+	color: #65848f !important;
+	box-sizing: border-box;
+}
+
+.menuCollapse__listLink--first {
+	display: block;
+	background-color: #fff;
+	font-family: "Bahiana";
+	font-size: 21px;
+}
+
+.menuCollapse__listItem:hover {
+	background-color: #65848f;
+}
+
+.menuCollapse__listLink:hover {
+	color: #fff!important;
+}
+
+.row {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1170px;
+}
+
+header {
+	margin-bottom: 140px;
+}
+
+.post {
+	margin-bottom: 0px;
+}
+
+.header__title {
+	font-size: 57px;
+	color: #fff;
+	font-family: "Bahiana";
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.header__name {
+	font-family: "Bahiana";
+	font-size: 21px;
+	text-align: right;
+	margin-top: 32px;
+	color: #7ca3b2;
+}
+
+.header__name span {
+	background-color: #fff;
+	padding: 6px 15px 6px 15px;
+	line-height: 21px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.header__name:nth-of-type(2) {
+	text-align: left;
+}
+
+main {
+	height: 100%;
+}
+
+.socialMedia {
+	margin-top: 20px;
+	height: 100%;
+/*	background: rgba(255,255,255,0.7);*/
+	background-color: #fff;
+	float: right;
+	width: 170px;
+}
+
+@media only screen and (max-width: 1170px) {
+	.socialMedia {
+		margin-top: 20px;
+		height: 100%;
+	/*	background: rgba(255,255,255,0.7);*/
+		background-color: #fff;
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+		width: 270px;
+	}
+}
+
+.socialMedia__title, .socialMedia__popular  {
+	font-size: 25px;
+	color: #7c7c7c;
+	font-family: "Bahiana";
+	padding: 10px 10px;
+	width:100%;
+}
+
+.socialMedia__popular  {
+	padding: 10px 10px 0px 10px;
+}
+
+.socialMedia__list {
+	font-size: 12px;
+	color: #7c7c7c;
+	list-style-type: none;
+	padding: 0px 10px;
+	font-family: "Roboto-bold";
+}
+
+.socialMedia__listItem {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.socialMedia__listItem:last-child {
+	border-bottom: none;
+}
+
+.socialMedia__listItemDate {
+	font-size: 10px;
+	color: #7c7c7c;
+	font-family: "Roboto";
+}
+
+.postBox {
+	height: 100%;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+.postBox__left {
+	height: 587px;
+	background-image: url("../images/norway-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postBox__right {
+	height: 100%;
+	padding: 0px;	
+	display: inline-block;
+}
+
+.postBox__country {
+	font-family: "Bahiana";
+	font-size: 42px;
+	color: #fff;
+	background-color: #e8a71c;
+	padding: 6px 18px 6px 18px;
+	display: inline-block;
+	letter-spacing: 6px;
+	line-height: 42px;
+}
+
+.postBox__title {
+	font-family: "Bahiana";
+	font-size: 46px;
+	color: #4c4b4b;
+	display: inline-block;
+	margin-top: 55px;
+	margin-left: 45px;
+}
+
+.postBox__txt {
+	font-family: "Roboto";
+	font-size: 12px;
+	color: #4c4b4b;
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 45px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	line-height: 23px;
+}
+
+.postBox--small {
+	width: 670px;
+	height: 100%;
+	margin-left: 5px;
+	background-color: #fff;
+	margin-top: 20px;
+}
+
+.postHeader {
+	width: 100%;
+	height: 251px;
+	background-image: url("../images/norway-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryBox {
+	height: 270px;
+	float: left;
+	padding-left: 0px;
+	margin: 20px 0px 0px 0px;
+}
+
+.galleryBox__img {
+	width: 127px;
+	height: 127px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-image: url('../../posts/norway/1.jpg');
+	background-size: cover;
+}
+
+.galleryBox__img:nth-of-type(2) {
+	background-image: url('../../posts/norway/2.jpg');
+}
+.galleryBox__img:nth-of-type(3) {
+	background-image: url('../../posts/norway/3.jpg');
+}
+.galleryBox__img:nth-of-type(4) {
+	background-image: url('../../posts/norway/4.jpg');
+}
+.galleryBox__img:nth-of-type(5) {
+	background-image: url('../../posts/norway/5.jpg');
+}
+.galleryBox__img:nth-of-type(6) {
+	background-image: url('../../posts/norway/6.jpg');
+}
+.galleryBox__img:nth-of-type(7) {
+	background-image: url('../../posts/norway/7.jpg');
+}
+.galleryBox__img:nth-of-type(8) {
+	background-image: url('../../posts/norway/8.jpg');
+}
+
+footer {
+	height: 65px;
+	margin-top: 50px;
+	background-color: #282828;
+}
+
+.fa {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: #6d6d6d;
+	color: #282828;
+	padding-left: 8px;
+	padding-top: 4px;
+	font-size: 24px !important;
+}
+
+.fa:hover {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: rgba(59,89,152,1);
+	color: #fff;
+	padding-left: 8px;
+	padding-top: 4px;
+	cursor: pointer;
+}
+
+.fa-instagram {
+	padding-left: 6px;
+	padding-top: 4px;
+	font-size: 22px !important;
+}
+
+.fa-instagram:hover {
+	padding-left: 6px;
+	padding-top: 4px;
+	background-color: white;
+	color: black;
+}
+
+.glyphicon-envelope {
+	font-size: 24px;
+	margin-top: -3px;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #696969;
+/*	cursor: pointer;*/
+}
+
+/*.glyphicon-envelope:hover {
+	color: #fff;
+}
+*/
+
+.menuIcon {
+	color: #fff;
+	background-color: #e0e0e0;
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.menuIcon--instagram:hover {
+	background-color: red;
+	background-color: #9d9d9d;
+}
+
+.row-footer {
+	background-color: #282828;
+}
+
+.footerList {
+	list-style-type: none;
+	color: #fff;
+	font-family: "Roboto-light";
+	padding-top: 14px;
+	float: left;
+	-webkit-padding-start: 0px;
+	background-color: #282828;
+}
+
+.footerList--right {
+	float: right;
+}
+
+.footerList--right .footerList__item {
+	padding-top: 8px;
+}
+
+.footerList__item--bold {
+	font-family: "Roboto-bold";
+}
+
+.footerList__itemTxt {
+	margin-right: 15px;
+}
+
+.footerList__item {
+	float: left;
+	margin-right: 10px;
+}
+
+.footerList__itemTxt {
+	font-family: "Bahiana";
+	font-size: 21px;
+}
