@@ -216,9 +216,10 @@ main {
 }
 
 .postBox__right {
-	height: 100%;
+	height: 587px;
 	padding: 0px;	
 	display: inline-block;
+	position: relative;
 }
 
 .postBox__country {
@@ -257,7 +258,26 @@ main {
 	font-family: "Roboto-bold";	
 	font-size: 12px;
 	background-color: #fff;
+	color: #4c4b4b;
 	border: none;
+	position: absolute;
+	bottom: 40px;
+	right: 25px;
+}
+
+.postBox__likeBtn, .postBox__commentBtn {
+	font-family: "Roboto";	
+	font-size: 12px;
+	background-color: #fff;
+	color: #ababab;
+	border: none;
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}
+
+.postBox__likeBtn {
+	bottom: 80px;
 }
 
 .postBox--small {
