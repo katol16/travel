@@ -146,14 +146,14 @@ main {
 
 @media only screen and (max-width: 1170px) {
 	.socialMedia {
-		margin-top: 20px;
-		height: 100%;
-	/*	background: rgba(255,255,255,0.7);*/
-		background-color: #fff;
 		margin-right: auto;
 		margin-left: auto;
 		float: none;
-		width: 270px;
+		width: 220px;
+		text-align: center;
+	} 
+	.menuIcon {
+		text-align: left;
 	}
 }
 
