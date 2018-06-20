@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.css" media="screen">
         <link rel="stylesheet" type="text/css" href="assets/styles/screen.css" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -45,7 +46,7 @@
 
         <main>
             <div class="row">
-                <div class="col-md-12 col-lg-3 galleryBox">
+                <div class="col-sm-2 col-lg-3 galleryBox">
                     <span id="1" class="galleryBox__img"></span>
                     <span id="2" class="galleryBox__img"></span>
                     <span id="3" class="galleryBox__img"></span>
@@ -55,7 +56,7 @@
                     <span id="7" class="galleryBox__img"></span>
                     <span id="8" class="galleryBox__img"></span>
                 </div>
-                <div class="col-md-8 co-lg-7 postBox postBox--small">
+                <div class="col-sm-8 co-lg-7 postBox postBox--small">
                     <div class="postHeader">
                         <h2 class="postBox__country">
                             NORWEGIA
@@ -77,12 +78,14 @@
                         Ta droga ma także wymiar wertykalny. To podróż w głąb siebie, na spotkanie swoich lęków, ograniczeń i kipiących jak gejzer radości. To wielokrotne próby cierpliwości, odwagi i rozsądku.  To ciągłe lekcje proszenia, otrzymywania i dawania. To także nieustająca improwizacja i praktyka wdzięczności – za  ludzkie dobro, za błękitne niebo, za znaleziona na drodze gumkę-recepturkę. To nieustanna akceptacja tego co przychodzi oraz trudne lekcje zaufania – do siebie, do swojego dziecka, do ludzi i do świata. I odkrywanie tego, że życie jest tu i teraz.
                     </p>
                 </div>
-                <div class="col-lg-2 socialMedia">
+                <div class="col-sm-2 col-lg-2 socialMedia--post">
                     <h3 class="socialMedia__title">
                         Media społecznościowe
                     </h3>
-                    <i class="fa menuIcon">&#xf09a;</i>
-                    <i class="fa fa-instagram menuIcon menuIcon--instagram"></i>
+                    <div class="socialMedia__icons">
+                        <i class="fa fa-fb menuIcon">&#xf09a;</i>
+                        <i class="fa fa-instagram menuIcon menuIcon--instagram"></i>
+                    </div>
                     <h3 class="socialMedia__popular">
                         Najpopularniejsze artykuły
                     </h3>
@@ -107,6 +110,18 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-lg-7 col-lg-push-3 author">
+                    autor: <span>Przemysław Szczerba</span>
+                </div>
+                <div class="col-lg-7 col-lg-push-3 bigFont">
+                    Zobacz rownież
+                </div>
+                <div class="col-lg-7 col-lg-push-3">
+                    Zdjęcia z psotami
+                </div>
+                <div class="col-lg-7 col-lg-push-3 bigFont">
+                    Komentarze
+                </div>
             </div>
         </main>
 
@@ -117,7 +132,7 @@
                         <a class="footerList__itemTxt">Z ryjem po świecie</a>
                     </li>
                     <li class="footerList__item">
-                        <i style="font-size:24px" class="fa">&#xf09a;</i>
+                        <i class="fa fa-fb">&#xf09a;</i>
                     </li>
                     <li class="footerList__item">
                         <i class="fa fa-instagram" style="font-size:24px"></i>
@@ -128,7 +143,7 @@
                         Kontakt
                     </li>
                     <li class="footerList__item">
-                        <span class="glyphicon glyphicon-envelope"></span>
+                       <i class="far fa-envelope"></i>
                     </li>
                     <li class="footerList__item footerList__item--bold">
                         zryjemposwiecie@gmail.com
