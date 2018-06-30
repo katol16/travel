@@ -266,6 +266,11 @@ main {
 	font-family: "Roboto";
 }
 
+.postContainer {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 .postBox {
 	height: 100%;
 	background-color: #fff;
