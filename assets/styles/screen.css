@@ -71,7 +71,7 @@ a, a:hover {
 
 @media only screen and (max-width: 1170px) {
 	.container {
-		margin-left: 10px;
+		margin-left: 0px;
 		margin-right: none;
 	}
 }
@@ -187,7 +187,7 @@ main {
 	height: 100%;
 }
 
-.socialMedia, .socialMedia--post {
+.socialMedia {
 	margin-top: 20px;
 	height: 100%;
 /*	background: rgba(255,255,255,0.7);*/
@@ -198,19 +198,24 @@ main {
 	box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 768px) { 
 	.socialMedia {
 		margin-right: auto;
 		margin-left: auto;
-		float: none;
 		width: 220px;
+		float: none;
+		clear: both;
 		text-align: center;
+		position: static;
+		border-top: 20px solid rgba(255,255,255,0);
+		background-clip: padding-box;
+		box-sizing: border-box;
 		border-left: 0px;
 	} 
 }
 
-@media only screen and (max-width: 768px) { 
-	.socialMedia--post {
+@media only screen and (max-width: 1170px) { 
+	.socialMedia--mainSite {
 		margin-right: auto;
 		margin-left: auto;
 		width: 220px;
