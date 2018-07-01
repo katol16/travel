@@ -20,7 +20,8 @@
 
 body {
 	background-image: url("../images/bg.jpg");
-	background-size: cover;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
     background-attachment: fixed;
 	background-color: #f7f8f8;
 	font-family: "Roboto";
@@ -588,6 +589,29 @@ footer {
 	margin-top: -5px;
 }
 
+.arrow-left, .arrow-right  {
+	padding-left: 0px;
+	margin-top: 0px;
+	background-color: transparent;
+	color: #fff;
+	font-size: 36px !important;
+	width: 5%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.fa-times {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	background-color: transparent;
+	color: #fff;
+	font-size: 26px !important;
+	width: 5%;
+	text-align: right;
+	cursor: pointer;	
+}
+
 .menuIcon {
 	color: #fff;
 	background-color: #e0e0e0;
@@ -753,4 +777,21 @@ footer {
 .footerList__itemTxt {
 	font-family: "Bahiana";
 	font-size: 21px;
+}
+
+aside {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+  	justify-content: center;
+  	align-items: center;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.8);
+}
+
+.galleryImg {
+	width: 90%;
+
 }
