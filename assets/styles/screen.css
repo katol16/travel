@@ -69,14 +69,12 @@ a, a:hover {
 	}
 }
 
-
 @media only screen and (max-width: 1170px) {
 	.container {
 		margin-left: 0px;
 		margin-right: none;
 	}
 }
-
 
 .navbar-collapse, .container {
     padding-right: 0px;
@@ -161,27 +159,6 @@ header {
 	font-family: "Bahiana";
 	text-transform: uppercase;
 	text-align: center;
-
-}
-
-.header__name {
-	font-family: "Bahiana";
-	font-size: 21px;
-	text-align: right;
-	margin-top: 32px;
-	color: #7ca3b2;
-}
-
-.header__name span {
-	background-color: #fff;
-	padding: 6px 15px 6px 15px;
-	line-height: 21px;
-	box-sizing: border-box;
-	text-align: center;
-}
-
-.header__name:nth-of-type(2) {
-	text-align: left;
 }
 
 main {
@@ -190,6 +167,7 @@ main {
 
 .socialMedia {
 	margin-top: 20px;
+	position: static;
 	height: 100%;
 /*	background: rgba(255,255,255,0.7);*/
 	background-color: #fff;
