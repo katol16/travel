@@ -1,22 +1,30 @@
 // STICKY socialMedia
-$(function(){
-        // Check the initial Poistion of the Sticky Header
-        var stickyHeaderTop = $('.socialMedia').offset().top;
-        var stickyHeaderRight = $(window).width() - ($('.socialMedia').offset().left + $('.socialMedia').outerWidth());
-        var socialMediaWidth = document.querySelector('.socialMedia').offsetWidth;
-        console.log(socialMediaWidth);
 
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('.socialMedia').css({position: 'fixed', width: socialMediaWidth+'px', top: '0px', right: stickyHeaderRight+'px', marginTop: '0px', height: 'auto'});
-                		$('.socialMedia--mainSite').css({paddingTop: '0px'});
-                } else {
-                        $('.socialMedia').css({position: 'static', marginTop: '20px', float: 'right'});
-                		$('.socialMedia--mainSite').css({paddingTop: '20px'});
-                }
-        });
-  });
+$(window).resize(function() { 
+	changeSocialMediaPosition();
+	console.log("test");
+});
 
+
+// trzeba to zrobić za pomocą klas!
+function changeSocialMediaPosition() {
+	if ( ($(document).width() > 768) || ($(document).hasClass('.socialMedia--mainSite') && ($(document).width() > 1170))) {
+		$(function(){
+		    // Check the initial Poistion of the Sticky Header
+		    var stickyHeaderTop = $('.socialMedia').offset().top;
+		    var stickyHeaderRight = $(window).width() - ($('.socialMedia').offset().left + $('.socialMedia').outerWidth());
+		    var socialMediaWidth = document.querySelector('.socialMedia').offsetWidth;
+
+		    $(window).scroll(function(){
+		        if( $(window).scrollTop() > stickyHeaderTop ) {
+		            $('.socialMedia').css({position: 'fixed', width: socialMediaWidth+'px', top: '0px', right: stickyHeaderRight+'px', marginTop: '0px', height: 'auto'});
+		        } else {
+		            $('.socialMedia').css({position: 'static', marginTop: '20px', float: 'right'});
+		        }
+		    });
+		});
+	}
+}
 
 // GALERIA zdjęć
 var galleryBox = document.querySelector(".galleryBox"),

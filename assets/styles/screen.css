@@ -81,6 +81,11 @@ a, a:hover {
     padding-left: 0px;
 }
 
+.navbar-collapse, .container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .menu--post {
     margin-bottom: 0px;
 }
