@@ -19,12 +19,14 @@ function changeSocialMediaPosition() {
 		        if( $(window).scrollTop() > stickyHeaderTop ) {
 		            $('.socialMedia').css({position: 'fixed', width: socialMediaWidth+'px', top: '0px', right: stickyHeaderRight+'px', marginTop: '0px', height: 'auto'});
 		        } else {
-		            $('.socialMedia').css({position: 'static', marginTop: '20px', float: 'right'});
+		            $('.socialMedia').css({position: 'static', marginTop: '20px', float: 'right', width: ''});
 		        }
 		    });
 		});
 	}
 }
+changeSocialMediaPosition();
+
 
 // GALERIA zdjęć
 var galleryBox = document.querySelector(".galleryBox"),
