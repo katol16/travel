@@ -18,6 +18,17 @@
 	src: url("../fonts/Bahiana-Regular.ttf");
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
 	background-image: url("../images/bg.jpg");
 	background-size: 100% auto;
@@ -25,6 +36,10 @@ body {
     background-attachment: fixed;
 	background-color: #f7f8f8;
 	font-family: "Roboto";
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
 /*UWAGA! body i .postBody, mają różne sposoby na wyświetlanie bg-img. 
@@ -168,6 +183,7 @@ header {
 
 main {
 	height: 100%;
+	margin-bottom: 50px;
 }
 
 .socialMedia {
@@ -713,6 +729,13 @@ footer {
 	display: inline-block;
 	letter-spacing: 6px;
 	line-height: 22px;
+}
+
+footer {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .row-footer {
