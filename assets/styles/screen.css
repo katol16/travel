@@ -776,5 +776,9 @@ aside {
 
 .galleryImg {
 	width: 90%;
-
 }
+
+/*.socialSticky {
+	position: fixed;
+	margin-top: 0px;
+}*/

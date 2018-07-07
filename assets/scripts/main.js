@@ -2,7 +2,7 @@
 
 $(window).resize(function() { 
 	changeSocialMediaPosition();
-	console.log("test");
+
 });
 
 
@@ -15,15 +15,20 @@ function changeSocialMediaPosition() {
 		    var stickyHeaderRight = $(window).width() - ($('.socialMedia').offset().left + $('.socialMedia').outerWidth());
 		    var socialMediaWidth = document.querySelector('.socialMedia').offsetWidth;
 
-		    $(window).scroll(function(){
-		        if( $(window).scrollTop() > stickyHeaderTop ) {
-		            $('.socialMedia').css({position: 'fixed', width: socialMediaWidth+'px', top: '0px', right: stickyHeaderRight+'px', marginTop: '0px', height: 'auto'});
+		    window.addEventListener('scroll', scrollFunc);
+		    function scrollFunc(){
+		    	console.log(stickyHeaderTop);
+		    	console.log($(window).scrollTop());
+		        if( ($(window).scrollTop() > stickyHeaderTop) && ($(document).width() > 768) ){
+		            $('.socialMedia').css({position: 'fixed', width: socialMediaWidth+'px', top: '0px', right: stickyHeaderRight+'px', marginTop: '0px', height: 'auto',});
+		            console.log("test");
 		        } else {
-		            $('.socialMedia').css({position: 'static', marginTop: '20px', float: 'right', width: ''});
+		            $('.socialMedia').css({position: 'static', marginTop: '20px',top: 'none', width: ''});
 		        }
-		    });
+		    };
 		});
 	}
+	
 }
 changeSocialMediaPosition();
 
