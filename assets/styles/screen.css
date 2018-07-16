@@ -179,6 +179,7 @@ header {
 	font-family: "Bahiana";
 	text-transform: uppercase;
 	text-align: center;
+	text-shadow: 2px 2px #7c7c7c;
 }
 
 main {
@@ -322,6 +323,14 @@ main {
 	display: inline-block;
 	letter-spacing: 6px;
 	line-height: 42px;
+}
+
+#rumunia {
+	background-image: url("../images/romania-bg.jpg");
+}
+
+#rumunia-maramuresz {
+	background-color: #AA3939;
 }
 
 .postBox__title {
