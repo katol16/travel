@@ -179,6 +179,7 @@ header {
 	font-family: "Bahiana";
 	text-transform: uppercase;
 	text-align: center;
+	text-shadow: 2px 2px #7c7c7c;
 }
 
 main {
@@ -280,7 +281,6 @@ main {
 
 .postBox__left {
 	height: 587px;
-	background-image: url("../images/norway-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -450,7 +450,6 @@ main {
 .postHeader {
 	width: 100%;
 	height: 251px;
-	background-image: url("../images/norway-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -509,34 +508,11 @@ main {
 .galleryBox__img {
 	min-height: 127px;
 	display: block;
-	background-image: url('../../posts/norway/1.jpg');
 	background-size: cover;
 	border-right: 10px solid rgba(255,255,255,0);
 	border-bottom: 10px solid rgba(255,255,255,0);
 	background-clip: padding-box;
 	box-sizing: border-box;
-}
-
-.galleryBox__img:nth-of-type(2) {
-	background-image: url('../../posts/norway/2.jpg');
-}
-.galleryBox__img:nth-of-type(3) {
-	background-image: url('../../posts/norway/3.jpg');
-}
-.galleryBox__img:nth-of-type(4) {
-	background-image: url('../../posts/norway/4.jpg');
-}
-.galleryBox__img:nth-of-type(5) {
-	background-image: url('../../posts/norway/5.jpg');
-}
-.galleryBox__img:nth-of-type(6) {
-	background-image: url('../../posts/norway/6.jpg');
-}
-.galleryBox__img:nth-of-type(7) {
-	background-image: url('../../posts/norway/7.jpg');
-}
-.galleryBox__img:nth-of-type(8) {
-	background-image: url('../../posts/norway/8.jpg');
 }
 
 footer {
@@ -799,6 +775,10 @@ aside {
 
 .galleryImg {
 	width: 90%;
+}
+
+.hide {
+	display: none;
 }
 
 /*.socialSticky {
