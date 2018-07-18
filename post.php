@@ -44,7 +44,7 @@
                             <li class="menuCollapse__listItem"><a href="index.php" class="menuCollapse__listLink menuCollapse__listLink--first" href="#">Z Ryjem po świecie</a></li>
                             <li class="menuCollapse__listItem"><a href="index.php" class="menuCollapse__listLink menuCollapse__listLink">Strona główna</a></li>
                             <li class="menuCollapse__listItem"><a class="menuCollapse__listLink" href="#">O nas</a></li>
-                            <li class="menuCollapse__listItem"><a href="gallery.html"  class="menuCollapse__listLink">Galeria</a></li>
+                            <li class="menuCollapse__listItem"><a href="gallery.php"  class="menuCollapse__listLink">Galeria</a></li>
                             <li class="menuCollapse__listItem"><a class="menuCollapse__listLink" href="#">Kontakt</a></li>
                         </ul>
                     </div>

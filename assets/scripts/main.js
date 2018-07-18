@@ -28,51 +28,94 @@ function changeSocialMediaPosition() {
 }
 changeSocialMediaPosition();
 
-// GALERIA zdjęć
-var galleryBox = document.querySelector(".galleryBox"),
-	galleryBoxId = galleryBox.id,
-	galleryBox__btn = document.querySelector(".galleryBox__btn"),
+// Ogólne zmienne do galerii w post.php i gallery.php
+
+var	aside = document.querySelector("aside"),
+	close = document.querySelector(".fa-times"),
 	galleryImg = document.querySelector(".galleryImg"),
-	aside = document.querySelector("aside"),
 	arrowLeft = document.querySelector(".arrow-left"),
 	arrowRight = document.querySelector(".arrow-right"),
-	nr,
-	numberOfPictures = 8;
-	close = document.querySelector(".fa-times");
+	galleryID,
+	numberOfPictures = 8,
+	nr;
 
-galleryBox__btn.addEventListener('click', showImgWithId);
-galleryBox.addEventListener('click', showImg);
-arrowLeft.addEventListener('click', prevImg);
-arrowRight.addEventListener('click', nextImg);
-close.addEventListener('click', closeImg);
+// GALERIA zdjęć w post.php
 
-function showImg(event) {
-	aside.style.display = "flex";
-	nr = event.target.id;
-	galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";
-}
+if ($('body').hasClass("postBody") ) {
 
-function showImgWithId(event) {
-	aside.style.display = "flex";
-	nr = 1;
-	galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";
-}
+	var galleryBox = document.querySelector(".galleryBox"),
+		galleryBoxId = galleryBox.id,
+		galleryBox__btn = document.querySelector(".galleryBox__btn");
 
-function nextImg() {
-	if (nr < numberOfPictures) {
-		nr++;
-		galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";	
+	galleryBox__btn.addEventListener('click', showImgWithId);
+	galleryBox.addEventListener('click', showImg);
+	arrowLeft.addEventListener('click', prevImg);
+	arrowRight.addEventListener('click', nextImg);
+	close.addEventListener('click', closeImg);
+
+	function showImg(event) {
+		aside.style.display = "flex";
+		nr = event.target.id;
+		galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";
+	}
+
+	function showImgWithId(event) {
+		aside.style.display = "flex";
+		nr = 1;
+		galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";
+	}
+
+	function nextImg() {
+		if (nr < numberOfPictures) {
+			nr++;
+			galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";	
+		}
+	}
+
+	function prevImg() {
+		if (nr > 1) {
+			nr--;
+			galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";	
+		}
+	}
+
+	function closeImg(event) {
+		aside.style.display = "none";
 	}
 }
 
-function prevImg() {
-	if (nr > 1) {
-		nr--;
-		galleryImg.src="posts/"+galleryBoxId+"/"+nr+".jpg";	
+// GALERIA zdjęć w gallery.php
+
+if ($('body').hasClass("galleryBody") ) {
+
+	var postBox__galleryContainer = document.querySelector('.postBox__galleryContainer');
+
+		postBox__galleryContainer.addEventListener("click", showImg);
+		close.addEventListener('click', closeImg);
+		arrowLeft.addEventListener('click', prevImg);
+		arrowRight.addEventListener('click', nextImg);
+
+	function showImg() {
+		galleryID = event.target.id;
+		nr = 1;
+		aside.style.display = "flex";
+		galleryImg.src="posts/"+galleryID+"/"+nr+".jpg";
+	}
+
+	function nextImg() {
+		if (nr < numberOfPictures) {
+			nr++;
+			galleryImg.src="posts/"+galleryID+"/"+nr+".jpg";	
+		}
+	}
+
+	function prevImg() {
+		if (nr > 1) {
+			nr--;
+			galleryImg.src="posts/"+galleryID+"/"+nr+".jpg";	
+		}
+	}
+	function closeImg() {
+		aside.style.display = "none";
 	}
 }
-
-function closeImg(event) {
-	aside.style.display = "none";
-}
-
